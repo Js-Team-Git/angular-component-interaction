@@ -1,0 +1,23 @@
+<div class="col-lg-12 row  interaction">
+    <div class="col-lg-6 card parent">
+        <h5>Parent Component</h5>
+        <hr>
+        <div class="row messageCard">
+            <div class="col-lg-12">
+                <div class="col-lg-6 from">
+                    <p class="messageFrom " *ngFor="let item of messageFromChild">{{item}}</p>
+                </div>
+                <div class="col-lg-6 to">
+                    <p class="messageTo " *ngFor="let item of messageToChild">{{item.message}}</p>
+                </div>
+            </div>
+            <div class="messageList col-lg-12">
+                <input placeholder="Send Message To Child" (keydown)="enter($event, message.value)" class="send" type="text" #message>
+                <i  (click)="sendMessage(message.value)" class="far fa-light fa-paper-plane"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 card child">
+        <child [messageFromParent]="messageToChild" (newMessage)="addMessage($event)"></child>
+    </div>
+</div>

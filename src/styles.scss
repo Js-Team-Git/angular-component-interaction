@@ -1,1 +1,150 @@
 /* You can add global styles to this file, and also import other style files */
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eff2f5;
+    position: relative;
+}
+
+.bg-light{
+    padding: 0px !important;
+}
+
+.navbar>.container-fluid{
+    height: 60px;
+    background-color: rgba(151, 151, 248, 0.769);
+}
+.container-fluid a{
+    color: white;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(151, 151, 248, 0.769);
+}
+
+footer h6{
+    padding-top: 5px;
+}
+
+.content,
+.page-not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 35px;
+}
+
+ .main.page-not-found h2{
+    color: rgba(255, 0, 0, 0.676);
+}
+
+// Components Interaction //
+div.interaction{
+    padding: 10px;
+}
+
+div.interactionChild{
+    padding-top: 10px;
+}
+
+// div.parent{
+//     margin-right: 10px;
+// }
+div.parent,
+div.child{
+    width: 48%;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow:10px 5px 5px gray;
+    margin-left: 15px;
+}
+
+.messageFrom{
+    background-color: grey;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    margin-top: 0px 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.messageTo{
+    background-color: rgba(5, 184, 32, 0.742);
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    margin-top: 0px 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.to{
+    display: inline-grid;
+    justify-content: end;
+}
+.from{
+    display: inline-grid;
+    justify-content: start;
+}
+p{
+    margin-bottom: 0rem !important;
+}
+
+.messageCard{
+    background-color:#e0dede42;
+    border-radius: 10px;
+}
+
+.messageList{
+    position: relative;
+}
+
+
+.fa-paper-plane:before {
+    content: "\f1d8";
+    color:  #ffffff;
+    position: absolute;
+    top: 21px;
+    right: 16px;
+    font-size: xx-large;
+    background-color: #00fc2685;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.fa-paper-plane:hover{
+    cursor: pointer;    
+}
+
+input.send{
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    padding: 10px;
+    color:  rgb(5, 184, 32);
+}
+
+::placeholder{
+    color:  rgba(5, 184, 32, 0.742);
+}
+
+.row.messageCard{
+    padding: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+hr.child{
+    margin-top: 25px;
+}
+
